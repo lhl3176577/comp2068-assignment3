@@ -1,0 +1,75 @@
+<!--file name: Web_assignment2
+Author Name: HongliangLiu(200255269)
+website Name:https://hongliangliuassignment2.herokuapp.com.
+file information please read readme file.
+-->
+<%- include ../partials/header.ejs %>
+<!--
+<main class="container">
+    <h1>Edit Contact Information</h1>
+
+    <form method="post">
+        <fieldset class="form-group">
+            <label for="ContactName" class="col-sm-2">ContactName: </label>
+            <input name="ContactName" required value="<%= businesses.ContactName %>" />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="ContactNumber" class="col-sm-2">ContactNumber: </label>
+            <input name="ContactNumber"required value="<%= businesses.ContactNumber %>"/>
+        </fieldset>
+         <fieldset class="form-group">
+            <label for="EmailAddress" class="col-sm-2">EmailAddress: </label>
+            <input name="EmailAddress"required value="<%= businesses.EmailAddress %>"/>
+        </fieldset>
+        
+        
+        
+        <button type="submit" class="col-sm-offset-2 btn btn-success">Submit</button>
+        
+ <a href="/businesses/delete/<%= businesses._id %>" title="Delete" onclick="return confirm('Are you sure you want to delete this?');">  
+     <button type="button" class="btn btn-danger">Delete</button> 
+        </a> 
+
+    </form>
+</main>
+-->
+
+
+
+<main class="container">
+    <h1>Edit a Contact List</h1>
+    <div class="col-sm-4">
+        <form method="post">
+            <fieldset class="form-group">
+                <label for="ContactName">ContactName: *</label>
+                <input name="ContactName" type="text" class="form-control" required value="<%= businesses.ContactName %>" autofocus />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="ContactNumber">ContactNumber: *</label>
+                <input name="ContactNumber" type="text" class="form-control" required value="<%= businesses.ContactNumber %>" />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="EmailAddress">EmailAddress: *</label>
+                <input name="EmailAddress" type="email" class="form-control" required value="<%= businesses.EmailAddress %>"/>
+            </fieldset>
+          
+            <fieldset class="form-group text-right">
+                <button type="submit" class="btn btn-primary" title="Update">
+                    <i class="fa fa-pencil-square-o"></i> Update</button>
+                <a href="/businesses/delete/<%= businesses._id %>" title="Delete" onclick="return confirm('Are you sure you want to delete this?');" class="btn btn-danger">
+                    <i class="fa fa-trash-o"></i> Delete
+                </a>
+                <a href="/businesses" title="Cancel"  class="btn btn-default">
+                    <i class="fa fa-undo"></i>  Cancel
+                </a>
+            </fieldset>
+        </form>
+    </div>
+
+</main>
+
+
+
+
+
+<%- include ../partials/footer.ejs %>

@@ -1,0 +1,116 @@
+<!--file name: Web_assignment2
+Author Name: HongliangLiu(200255269)
+website Name:https://hongliangliuassignment2.herokuapp.com.
+file information please read readme file.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+
+  <!-- Latest compiled and minified CSS -->
+  
+   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css"> 
+   <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"> 
+   <link rel="stylesheet" href="lib/bootstrap-social/bootstrap-social.css"> 
+
+ 
+  <!-- Custom CSS -->
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Business Contact List</a>
+      </div> <!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+                <li><a href="/"><i class="fa fa-home fa-2x"></i>HOME</a></li>
+                <li><a href="/about"><i class="fa fa-building fa-2x"></i>About Me</a></li>
+                <li><a href="/server"><i class="fa fa-newspaper-o fa-2x"></i>Services</a></li>
+                <li><a href="/project"><i class="fa fa-info fa-2x"></i>Projects</a></li>
+                <li><a href="/contact "><i class="fa fa-comments fa-2x"></i>Contact Us</a></li>
+            </ul>
+            
+              <ul class="nav navbar-nav navbar-right">
+          <% if(title == "Home" ) { %>
+            <li class="active">
+          <% } else { %>
+          <li>
+            <% } %>
+           
+          <li role="separator" class="divider"></li>
+          <% if (displayName) { %>
+            <% if(title == "Users" ) { %>
+            <li class="active">
+              <% } else { %>
+            <li>
+              <% } %>
+              <a href="/users">Users</a></li>
+              <li>  <a href="/businesses">Business</a></li>
+              <li>  <a href="/todoList">Todo List</a></li>
+            <li class="navbar-text">Hello,
+              <%= displayName %>
+            </li>
+            <li><a href="/logout">Logout</a></li>
+            <% } else { %>
+              <% if(title == "Register" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/register">Register</a></li>
+              <% if(title == "Login" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/login">Login</a></li>
+              <% } %>
+        </ul> <!-- nav navbar-nav navbar-right -->
+          
+ <!--          <ul class="nav navbar-nav navbar-right">
+         
+          <li>
+           
+            <a href="/">Home</a></li>
+          <li role="separator" class="divider"></li>
+  
+         
+           
+            <li>
+           
+                <a href="/login">Login</a></li>
+           
+        </ul> <!-- nav navbar-nav navbar-right -->
+          
+           
+        
+        
+        
+        
+        
+      </div> <!-- collapse navbar-collapse -->
+    </div> <!-- container-fluid -->
+  </nav> <!-- navbar navbar-inverse -->
+
+
+
+

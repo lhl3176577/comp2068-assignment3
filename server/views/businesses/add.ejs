@@ -1,0 +1,37 @@
+<!--file name: Web_assignment2
+Author Name: HongliangLiu(200255269)
+website Name:https://hongliangliuassignment2.herokuapp.com.
+file information please read readme file.
+-->
+<%- include ../partials/header.ejs %>
+
+<main class="container">
+
+
+<h1>Add  a new  Business Contact Member</h1>
+    
+      <form method="post">
+        <fieldset class="form-group">
+            <label for="ContactName" class="col-sm-2">ContactName: </label>
+            <input name="ContactName" required  />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="ContactNumber" class="col-sm-2">ContactNumber: </label>
+            <input name="ContactNumber" required/>
+        </fieldset>
+         <fieldset class="form-group">
+            <label for="EmailAddress" class="col-sm-2">EmailAddress: </label>
+            <input name="EmailAddress" required/>
+        </fieldset>
+    
+       <button type="submit" class="col-sm-offset-2 btn btn-success">Submit</button>
+        
+        
+    </form>
+
+
+
+</main>
+
+</body>
+</html>
