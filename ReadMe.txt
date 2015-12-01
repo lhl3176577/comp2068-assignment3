@@ -1,4 +1,4 @@
-This website is the assignment3 for Comp2068 .IT create a todo list for my personal profile.
+This website is the assignment3 for Comp2068 .Adding a todo list base on assignment2.It allow user to create todo list and counter it.
 
 public/sytlesheet/style.css:the css about the background image.
 Passport.js:Javascrip for Set up passport verification document

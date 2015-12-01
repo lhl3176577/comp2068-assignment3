@@ -1,8 +1,3 @@
-/*file name: Web_assignment3
-Author Name: HongliangLiu(200255269)
-website Name:https://hongliangliuassignment3.herokuapp.com.
-file information please read readme file.
-*/ 
 #!/usr/bin/env node
 
 /**
