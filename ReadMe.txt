@@ -1,4 +1,4 @@
-This website is the assignment2 for Comp2068 .It allow user insert the business contact list ,edit the information and delete the list.
+This website is the assignment3 for Comp2068 .IT create a todo list for my personal profile.
 
 public/sytlesheet/style.css:the css about the background image.
 Passport.js:Javascrip for Set up passport verification document
